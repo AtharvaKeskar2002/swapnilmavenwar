@@ -30,8 +30,7 @@ pipeline {
                             sudo apt-get install unzip
                             wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.93/bin/apache-tomcat-8.5.93.tar.gz
                             sudo tar -xzvf apache-tomcat-8.5.93.tar.gz
-                            mv /home/ubuntu/workspace/atharva/target/studentapp-2.2-SNAPSHOT.war /home/ubuntu/workspace/atharva/target/student.war
-                            cp /home/ubuntu/workspace/atharva/target/student.war apache-tomcat-8.5.93/webapps/
+                            mv studentapp-2.2-SNAPSHOT.war apache-tomcat-8.5.93/webapps/student.war
                             cd apache-tomcat-8.5.93/bin/
                             ./catalina.sh start
                     """
@@ -39,3 +38,11 @@ pipeline {
             }
         }
 }
+// sudo apt update 
+//                             sudo apt-get install unzip
+//                             wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.93/bin/apache-tomcat-8.5.93.tar.gz
+//                             sudo tar -xzvf apache-tomcat-8.5.93.tar.gz
+//                             mv /home/ubuntu/workspace/atharva/target/studentapp-2.2-SNAPSHOT.war /home/ubuntu/workspace/atharva/target/student.war
+//                             cp /home/ubuntu/workspace/atharva/target/student.war apache-tomcat-8.5.93/webapps/
+//                             cd apache-tomcat-8.5.93/bin/
+//                             ./catalina.sh start
