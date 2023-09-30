@@ -33,6 +33,8 @@ pipeline {
                             sudo unzip apache-tomcat-10.1.13.zip -d /opt/tomcat
                             sudo chmod -R +x /opt/tomcat/apache-tomcat-10.1.13
                             cp /home/ubuntu/workspace/atharva/target/studentapp.war /opt/tomcat/apache-tomcat-10.1.13/webapps/
+                            cd /opt/tomcat/apache-tomcat-10.1.13/bin/
+                            ./catalina.sh start
                     """
                 }
             }
