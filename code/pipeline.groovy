@@ -31,10 +31,10 @@ pipeline {
                             wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.93/bin/apache-tomcat-8.5.93.tar.gz
                             sudo tar -xzvf apache-tomcat-8.5.93.tar.gz
                             cd /home/ubuntu/workspace/atharva/target
-                            mv studentapp-2.2-SNAPSHOT student.war
+                            sudo mv studentapp-2.2-SNAPSHOT student.war
                             
-                            mv /home/ubuntu/workspace/atharva/target/student.war /home/ubuntu/workspace/atharva/apache-tomcat-8.5.93/webapps/student.war
-                            cd apache-tomcat-8.5.93/bin/
+                            sudo mv /home/ubuntu/workspace/atharva/target/student.war /home/ubuntu/workspace/atharva/apache-tomcat-8.5.93/webapps/student.war
+                            sudo cd apache-tomcat-8.5.93/bin/
                             ./catalina.sh start
                     """
                 }
