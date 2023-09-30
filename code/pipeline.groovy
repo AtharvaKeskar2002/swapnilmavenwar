@@ -15,7 +15,7 @@ pipeline {
             stage('Build') {
                 steps {
                         sh """
-                            cd /home/ubuntu/workspace
+                            cd /home/ubuntu/workspace/atharva/
                             sudo apt-get install maven -y
                             mvn clean 
                             mvn package
