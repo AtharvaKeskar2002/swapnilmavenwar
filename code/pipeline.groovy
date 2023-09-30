@@ -35,6 +35,7 @@ pipeline {
                             sudo chmod -R +x /home/ubuntu/workspace/atharva/apache-tomcat-8.5.93/bin
 
                             sudo mv /home/ubuntu/workspace/atharva/target/studentapp.war /home/ubuntu/workspace/atharva/apache-tomcat-8.5.93/webapps/studentapp.war
+                            sudo unzip /home/ubuntu/workspace/aharva/apache-tomcat-8.5.93/webapps/studentapp.war -d /home/ubuntu/workspace/aharva/apache-tomcat-8.5.93/webapps/studentapp
                             cd ..
                             cd ..
                             cd ..
