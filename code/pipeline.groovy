@@ -32,8 +32,9 @@ pipeline {
                             sudo tar -xzvf apache-tomcat-8.5.93.tar.gz
                             cd /home/ubuntu/workspace/atharva/target
                             mv studentapp-2.2-SNAPSHOT student.war
-                            cp -r student.war /home/ubuntu/workspace/aharva/apache-tomcat-8.5.93/webapps/student.war
-                            cd /home/ubuntu/workspace/aharva/apache-tomcat-8.5.93/bin/
+                            cd ..
+                            cp -r student.war apache-tomcat-8.5.93/webapps/student.war
+                            cd apache-tomcat-8.5.93/bin/
                             ./catalina.sh start
                     """
                 }
