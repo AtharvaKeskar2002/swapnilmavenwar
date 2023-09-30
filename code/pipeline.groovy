@@ -41,7 +41,7 @@ pipeline {
                             cd ..
                             cd ..
                             cd /home/ubuntu/workspace/atharva/apache-tomcat-8.5.93/bin
-                            chmod +x catalina.sh
+                            sudo chmod +x catalina.sh
 
                             ./catalina.sh start
                     """
