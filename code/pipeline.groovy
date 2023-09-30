@@ -32,7 +32,8 @@ pipeline {
                             sudo mkdir /opt/tomcat
                             sudo unzip apache-tomcat-10.1.13.zip -d /opt/tomcat
                             sudo chmod -R +x /opt/tomcat/apache-tomcat-10.1.13
-                            cp /home/ubuntu/workspace/atharva/target/studentapp-2.2-SNAPSHOT.war /opt/tomcat/apache-tomcat-10.1.13/webapps/
+                            mv /home/ubuntu/workspace/atharva/target/studentapp-2.2-SNAPSHOT.war student.war
+                            cp /home/ubuntu/workspace/atharva/target/student.war /opt/tomcat/apache-tomcat-10.1.13/webapps/
                             cd /opt/tomcat/apache-tomcat-10.1.13/bin/
                             ./catalina.sh start
                     """
