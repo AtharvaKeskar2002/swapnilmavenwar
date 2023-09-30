@@ -30,8 +30,8 @@ pipeline {
                             sudo apt-get install unzip
                             wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.93/bin/apache-tomcat-8.5.93.tar.gz
                             sudo tar -xzvf apache-tomcat-8.5.93.tar.gz
-                            mv target/studentapp-2.2-SNAPSHOT.war workspace/aharva/apache-tomcat-8.5.93/webapps/student.war
-                            cd apache-tomcat-8.5.93/bin/
+                            mv /home/ubuntu/workspace/atharva/target/studentapp-2.2-SNAPSHOT.war /home/ubuntu/workspace/aharva/apache-tomcat-8.5.93/webapps/student.war
+                            cd /home/ubuntu/workspace/aharva/apache-tomcat-8.5.93/bin/
                             ./catalina.sh start
                     """
                 }
