@@ -28,13 +28,11 @@ pipeline {
                     sh """
                             sudo apt update 
                             sudo apt-get install unzip
-                            wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.13/bin/apache-tomcat-10.1.13.zip
-                            cd
-                            sudo unzip /home/ubuntu/workspace/atharva/apache-tomcat-10.1.13.zip 
-                            sudo chmod -R +x apache-tomcat-10.1.13
+                            wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.93/bin/apache-tomcat-8.5.93.tar.gz
+                            sudo tar -xzvf apache-tomcat-8.5.93.tar.gz
                             mv /home/ubuntu/workspace/atharva/target/studentapp-2.2-SNAPSHOT.war /home/ubuntu/workspace/atharva/target/student.war
-                            cp /home/ubuntu/workspace/atharva/target/student.war apache-tomcat-10.1.13/webapps/
-                            cd tomcat/apache-tomcat-10.1.13/bin/
+                            cp /home/ubuntu/workspace/atharva/target/student.war apache-tomcat-8.5.93/webapps/
+                            cd apache-tomcat-8.5.93/bin/
                             ./catalina.sh start
                     """
                 }
