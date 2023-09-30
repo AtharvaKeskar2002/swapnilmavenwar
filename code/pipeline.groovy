@@ -26,7 +26,7 @@ pipeline {
             stage('Deploy') {
                 steps {
                     sh """
-                            apt update -y
+                            sudo apt update 
                             sudo apt-get install unzip
                             wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.13/bin/apache-tomcat-10.1.13.zip
                             sudo mkdir /opt/tomcat
