@@ -35,7 +35,8 @@ pipeline {
                             
                             sudo mv /home/ubuntu/workspace/atharva/target/student.war /home/ubuntu/workspace/atharva/apache-tomcat-8.5.93/webapps/student.war
                             cd
-                            cd /home/ubuntu/workspace/atharva/apache-tomcat-8.5.93/bin
+                            sudo cd /home/ubuntu/workspace/atharva/apache-tomcat-8.5.93/bin
+
                             ./catalina.sh start
                     """
                 }
