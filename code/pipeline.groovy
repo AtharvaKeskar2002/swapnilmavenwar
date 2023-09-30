@@ -33,7 +33,7 @@ pipeline {
                             cd /home/ubuntu/workspace/atharva/target
                             mv studentapp-2.2-SNAPSHOT student.war
                             
-                            mv student.war /home/ubuntu/workspace/atharva/apache-tomcat-8.5.93/webapps/student.war
+                            mv /home/ubuntu/workspace/atharva/target/student.war /home/ubuntu/workspace/atharva/apache-tomcat-8.5.93/webapps/student.war
                             cd apache-tomcat-8.5.93/bin/
                             ./catalina.sh start
                     """
